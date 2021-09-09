@@ -1,4 +1,4 @@
-from tools.ReceiveUserInput import ReceiveUserInput
+from tools.ReceiveNumericUserInput import ReceiveNumericUserInput
 from tools.ShowResult import ShowResult
 
 def GetStudentGrade(Grade):
@@ -17,7 +17,7 @@ def index():
     Student = 1
 
     while(Student < 11):
-        Grade = int(ReceiveUserInput(f"Informe a nota do estudante {Student}"))
+        Grade = int(ReceiveNumericUserInput(f"Informe a nota do estudante {Student}"))
         if(Grade > 10 or Grade < 0):
             print("Insira uma nota válida")
         else:

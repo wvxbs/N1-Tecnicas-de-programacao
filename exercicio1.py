@@ -1,4 +1,4 @@
-from tools.ReceiveUserInput import ReceiveUserInput
+from tools.ReceiveNumericUserInput import ReceiveNumericUserInput
 from tools.ShowResult import ShowResult
 
 def CalculateSquareArea(Side):
@@ -7,7 +7,7 @@ def CalculateSquareArea(Side):
     return Area
 
 def main():
-    Side = ReceiveUserInput("Informe o valor do lado do quadrado")
+    Side = ReceiveNumericUserInput("Informe o valor do lado do quadrado")
     Area = CalculateSquareArea(Side)
 
     ShowResult(f"A área do quadrado de lado {Side} é", Area)

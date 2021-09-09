@@ -1,6 +1,4 @@
 def ReceiveUserInput(Message):
-    Input = float(input(f"{Message}:  "))
-
-    
+    Input = input(f"{Message}:  ")
 
     return Input
