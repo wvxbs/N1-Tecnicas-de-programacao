@@ -17,7 +17,7 @@ def index():
     Student = 1
 
     while(Student < 11):
-        Grade = ReceiveUserInput(f"Informe a nota do estudante {Student}")
+        Grade = int(ReceiveUserInput(f"Informe a nota do estudante {Student}"))
         if(Grade > 10 or Grade < 0):
             print("Insira uma nota válida")
         else:
