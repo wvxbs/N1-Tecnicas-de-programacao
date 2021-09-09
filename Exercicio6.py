@@ -13,10 +13,12 @@ def CalcularArea(Raio, Pi):
     return Resultado 
 
 def circunferencia_ou_area(Raio, Operacao = "c"):
+    Pi = 3.14
+
     if Operacao == "c":
-        return CalcularCircunferencia(Raio, 3.14)
+        return CalcularCircunferencia(Raio, Pi)
     else:
-        return CalcularArea(Raio, 3.14)
+        return CalcularArea(Raio, Pi)
 
 def main():
     while(True):
