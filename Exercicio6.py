@@ -27,7 +27,7 @@ def main():
         DesejaCalcularArea = ReceiveUserInput("Deseja calcular a área?")
 
         if DesejaCalcularArea.lower() == "sim":
-            ShowResult("A área é",circunferencia_ou_area(Raio, DesejaCalcularArea))
+            ShowResult("A área é", circunferencia_ou_area(Raio, DesejaCalcularArea))
             
         elif DesejaCalcularArea.lower() == "nao" or DesejaCalcularArea.lower() == "não":
             ShowResult("A circunferência é", circunferencia_ou_area(Raio))
