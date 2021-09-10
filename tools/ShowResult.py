@@ -1,2 +1,2 @@
-def ShowResult(Message, Result):
+def ShowResult(Message, Result = None):
     print(f"{Message}: {Result}")
